@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Elegante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hotel Elegante</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#descuentos">Descuentos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenido al Hotel Elegante</h2>
+            <p>Disfruta de una experiencia única en nuestro hotel de lujo.</p>
+            <a href="#reservas" class="btn">Reserva Ahora</a>
+        </div>
+    </section>
+
+    <section id="habitaciones" class="rooms">
+        <h2>Nuestras Habitaciones</h2>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="habitacion1.jpg" alt="Habitación Estándar">
+                <h3>Habitación Estándar</h3>
+                <p>Perfecta para una estancia cómoda y relajante.</p>
+                <a href="#reservas" class="btn">Reservar</a>
+            </div>
+            <div class="room-card">
+                <img src="habitacion2.jpg" alt="Habitación Deluxe">
+                <h3>Habitación Deluxe</h3>
+                <p>Amplia y con vistas espectaculares.</p>
+                <a href="#reservas" class="btn">Reservar</a>
+            </div>
+            <div class="room-card">
+                <img src="habitacion3.jpg" alt="Suite Presidencial">
+                <h3>Suite Presidencial</h3>
+                <p>El máximo lujo y confort para una experiencia inolvidable.</p>
+                <a href="#reservas" class="btn">Reservar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="reservation">
+        <h2>Reserva tu Estancia</h2>
+        <form action="#" method="post">
+            <label for="fecha-llegada">Fecha de Llegada:</label>
+            <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+
+            <label for="fecha-salida">Fecha de Salida:</label>
+            <input type="date" id="fecha-salida" name="fecha-salida" required>
+
+            <label for="tipo-habitacion">Tipo de Habitación:</label>
+            <select id="tipo-habitacion" name="tipo-habitacion" required>
+                <option value="estandar">Habitación Estándar</option>
+                <option value="deluxe">Habitación Deluxe</option>
+                <option value="suite">Suite Presidencial</option>
+            </select>
+
+            <label for="descuento">Código de Descuento (opcional):</label>
+            <input type="text" id="descuento" name="descuento">
+
+            <button type="submit" class="btn">Reservar</button>
+        </form>
+    </section>
+
+    <section id="descuentos" class="discounts">
+        <h2>Descuentos Especiales</h2>
+        <p>¡Aprovecha nuestras ofertas exclusivas!</p>
+        <ul>
+            <li>20% de descuento en reservas anticipadas.</li>
+            <li>10% de descuento para miembros frecuentes.</li>
+            <li>Ofertas especiales en temporada baja.</li>
+        </ul>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? No dudes en contactarnos.</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel Elegante. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
